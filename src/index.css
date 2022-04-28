@@ -1,5 +1,5 @@
 html, body {
-    font-family: var(--font-family,spotify-circular),Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -24,7 +24,7 @@ html, body {
     height: 64px;
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 3.2fr 1.5fr 0.3fr; 
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 3.9fr 0.6fr 0.3fr; 
     grid-template-rows: 1fr; 
     grid-template-areas: 
     ". left_arrow right_arrow . reg user"; 
@@ -34,44 +34,28 @@ html, body {
 
 .left_arrow {
     grid-area: left_arrow; 
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 64px;
+    height: 64px;
+    margin-left: 30px;
 }
 
 .right_arrow {
-    margin-left: auto;
     grid-area: right_arrow; 
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 64px;
+    height: 64px;
+    margin-left: 30px;
 }
 
 .reg { 
-    text-align: right;
-    margin-top: 7px;
     grid-area: reg; 
+    margin: auto;
 }
 
 .user { 
     grid-area: user; 
+    margin: auto;
 }
 
-.sidebar {
-    position: fixed;
-    height: calc(100% - 90px);
-    width: 245px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 100px 120px 1fr 40px; 
-    grid-template-areas: 
-      "banner"
-      "navigation"
-      "functions"
-      "application"; 
-    grid-area: sidebar; 
-    background: #000000;
-  }
 
 .player {
     position: fixed;
@@ -94,17 +78,12 @@ html, body {
 
 .slider{
     grid-area: slider; 
-    margin-right: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 .volume{
     grid-area: volume; 
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 
 .next{
@@ -142,6 +121,7 @@ html, body {
 .icon{
     height: 25px;
     width: 25px;
+    margin-left: 30px;
 }
 .like{
     grid-area: like; 
@@ -166,14 +146,36 @@ html, body {
     margin-bottom: 90px;
 }
 
+.sidebar {
+    position: fixed;
+    height: calc(100% - 90px);
+    width: 245px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px 120px 1fr 40px; 
+    grid-template-areas: 
+      "banner"
+      "navigation"
+      "functions"
+      "application"; 
+    grid-area: sidebar; 
+    background: #000000;
+  }
+
 .banner {
     grid-area: banner; 
+    height: 64px;
 }
 
 .navigation {
     grid-area: navigation; 
     margin: 0;
     padding: 0;
+}
+
+.navigation_img {
+    height: 34px;
 }
 
 .functions { 
@@ -186,49 +188,39 @@ html, body {
     margin-left: 10px;
 }
 
-a { 
+.links { 
     color: #ffffff;
     text-decoration: none; /* Убираем подчеркивание у ссылок */
    }
-a:hover {
+.links:hover {
     color: #bd9f9f; /* Цвет ссылки при наведении на нее курсора мыши */  
    }
 
-li {
+.style_for_li {
     list-style-type: none; /* Убираем маркеры */
    }
-ul {
+.style_for_ul {
     padding: 0; 
     margin-top: 0;
     margin-left: auto;
    }
 
-hr {
-    border: none; /* Убираем границу */
-    background-color: #2e2e2e; /* Цвет линии */
-    color: #2e2e2e; /* Цвет линии для IE6-7 */
-    height: 1px; /* Толщина линии */
-    margin-top: 0;
-   }
 
-section, img {
-    margin-left: 30px;
+.style_for_h2{
+    margin-left: 45px;
+    color: #ffffff;
 }
 
-h2{
-    margin-left: 45px;
+.style_for_h3{
     color: #ffffff;
 }
 
 .cover {
     width: 200x;
     height: 250px;
-}
-p {
     margin-left: 30px;
-    margin-top: 0;
-    margin-bottom: 3px; 
 }
+
 
 .flex-container {
     width: auto;
@@ -236,6 +228,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 30px;
 }
 
 .box {
@@ -246,6 +239,9 @@ p {
     font-weight: 700;
     width: 250px;
     font-size: 20px;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 3px; 
   }
 
 .box2 {
@@ -257,14 +253,10 @@ p {
     width: 250px;
     color: #a8a8a8;
     font-size: 14px;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 3px; 
   }
-
-.login{
-    height: 58px; 
-    margin-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
 .navigation, .functions{
     font-weight: 700;
