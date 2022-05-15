@@ -63,11 +63,11 @@ html, body {
     width: 100%;
     height: 90px;
     display: grid; 
-    grid-template-columns: 0.6fr 0.9fr 0.5fr 3fr 0.2fr 0.3fr 0.2fr 0.2fr 3.2fr 1.3fr; 
+    grid-template-columns: 0.6fr 0.9fr 0.5fr 1.4fr 6fr; 
     grid-template-rows: 1.2fr 0.8fr; 
     grid-template-areas: 
-      "mini_photo name like mix back play next repeat . volume"
-      "mini_photo author like slider slider slider slider slider slider volume"; 
+      "mini_photo name like volume ."
+      "mini_photo author like volume ."; 
     grid-area: player; 
     background: #1a1a1a; /* Цвет фона */
 }
@@ -76,43 +76,9 @@ html, body {
     grid-area: mini_photo; 
 }
 
-.slider{
-    grid-area: slider; 
-    margin: auto;
-}
-
 .volume{
     grid-area: volume; 
     margin: auto;
-}
-
-.next{
-    grid-area: next; 
-    margin-right: auto;
-    margin-top: auto;
-}
-
-.repeat{
-    grid-area: repeat; 
-    margin-right: auto;
-    margin-top: auto;
-}
-
-.back{
-    grid-area: back; 
-    margin-left: auto;
-    margin-top: auto;
-}
-
-.play{
-    grid-area: play; 
-    margin-top: auto;
-}
-
-.mix{
-    grid-area: mix; 
-    margin-top: auto;
-    margin-left: auto;
 }
 
 .mini{
