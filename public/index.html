@@ -1,37 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#000000"/>
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="shortcut icon" href="../src/images/icon.png" type="image/png">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+        <div class="header">
+            <a class="links" href="index.html">
+              <img class ="left_arrow" src="../src/images/left.png">
+            </a>
+            <a class="links" href="index.html">
+              <img class ="right_arrow" src="../src/images/right.png">
+            </a>
+            <a class="reg" href="index.html">
+              <h3 class="style_for_h3">Регистрация</h3>
+            </a>
+            <a class="user" href="index.html">
+              <h3 class="style_for_h3">Войти</h3>
+            </a>
+        </div>
+        <div class="sidebar">
+              <a class="links" href="index.html">
+              <img class="banner" src="../src/images/Spotify_Logo_RGB_White.png">
+              </a>
+            <div class="navigation">
+                <ul class="style_for_ul">
+                  <li class="style_for_li">
+                    <a class="links" href="index.html">
+                      <img class="navigation_img" src="../src/images/house.jpg"> 
+                      Главная
+                    </a>
+                  </li>
+                  <li class="style_for_li">
+                    <a class="links" href="index.html">
+                      <img class="navigation_img" src="../src/images/751463.png"> 
+                      Поиск
+                    </a>
+                  </li>
+                  <li class="style_for_li">
+                    <a class="links" href="index.html">
+                      <img class="navigation_img" src="../src/images/Bergmann-Bilder.png"> 
+                      Медиатека
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="functions">
+              <ul class="style_for_ul">
+                <li class="style_for_li">
+                  <a class="links" href="index.html">
+                    <img class="navigation_img" src="../src/images/plus.png"> 
+                    Создать плейлист
+                  </a>
+                </li>
+                <li class="style_for_li">
+                <a class="links" href="index.html">
+                  <img class="navigation_img" src="../src/images/heart.png"> 
+                  Любимые треки
+                </a>
+                </li> 
+              </ul>
+            </div>
+            <div class="application">
+              <a class="links" href="index.html">
+                <img class="navigation_img" src="../src/images/download.png"> 
+                Скачать 
+              </a>
+            </div>
+        </div>
+        <div class="content">
+          <h2 class="style_for_h2">Выбор редакции (чарты)</h2>
+          <section class="flex-container">
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/week_chart.PNG" class="cover"> 
+                <p class="box">Топ треков(во всем мире)</p>
+                <p class="box2">во всем мире: треки, популярные прямо сейчас. Подборка обновляется каждую неделю</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/rus_top.PNG" class="cover"> 
+                <p class="box">Топ треков(Россия)</p>
+                <p class="box2">Россия: треки, популярные прямо сейчас. Подборка обновляется каждую неделю.</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/top_global.PNG" class="cover"> 
+                <p class="box">Топ-50 (во всем мире)</p>
+                <p class="box2">во всем мире: треки, популярные прямо сейчас. Подборка обновляется каждый день.</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/top50_rus.PNG" class="cover"> 
+                <p class="box">Топ-50 (Россия)</p>
+                <p class="box2">Россия: треки, популярные прямо сейчас. Подборка обновляется каждый день.</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/top50_global.PNG" class="cover"> 
+                <p class="box">Топ-50 трендов (во всем мире)</p>
+                <p class="box2">во всем мире: треки, которые быстрее всего набирают популярность прямо сейчас. Подборка обновляется каждый день.</p>
+              </a>
+            </div>
+           </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+           <h2 class="style_for_h2">Что-то новенькое</h2>
+          <section class="flex-container">
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/new_1.PNG" class="cover"> 
+                <p class="box">Главные хиты</p>
+                <p class="box2">Актуальные хиты в России прямо сейчас. На обложке: Дуа Липа и Меган Ти Сталлион</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/new_2.PNG" class="cover"> 
+                <p class="box">Топ треков(Россия)</p>
+                <p class="box2">Россия: треки, популярные прямо сейчас. Подборка обновляется каждую неделю.</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/new_3.PNG" class="cover"> 
+                <p class="box">Год Spotify в России</p>
+                <p class="box2">Spotify в России уже целый год. Эти 100 треков стали самыми популярными за это время!</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/new_4.PNG" class="cover"> 
+                <p class="box">Лучшие треки 2021: Россия</p>
+                <p class="box2">Треки, которые слушали больше всех в российском Spotify. На обложке: MORGENSHTERN</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/new_5.PNG" class="cover"> 
+                <p class="box">Rock Classics</p>
+                <p class="box2">Rock legends & epic songs spanning decades, that continue to inspire generations.</p>
+              </a>
+            </div>
+           </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+           <h2 class="style_for_h2">В тренде</h2>
+          <section class="flex-container">
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/trend_1.PNG" class="cover"> 
+                <p class="box">Вина (feat. 17 SEVENTEEN)</p>
+                <p class="box2">OG Buda, MAYOT</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/trend_2.PNG" class="cover">
+                <p class="box">Влюбилась</p>
+                <p class="box2">Big Baby Tape, Молодой Платон</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/trend_3.PNG" class="cover"> 
+                <p class="box">Не убежал</p>
+                <p class="box2">ЛСП</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/trend_4.PNG" class="cover"> 
+                <p class="box">сети</p>
+                <p class="box2">quiizzzmeow</p>
+              </a>
+            </div>
+          </section>
+
+          <h2 class="style_for_h2">Только новинки</h2>
+          <section class="flex-container">
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/1.PNG" class="cover"> 
+                <p class="box">Не перегори</p>
+                <p class="box2">Mary Gu</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/2.PNG" class="cover">
+                <p class="box">под луной</p>
+                <p class="box2">МУККА</p>
+              </a>
+            </div>
+            <div>
+              <a class="links" href="index.html">
+                <img src="../src/images/3.PNG" class="cover"> 
+                <p class="box">Мой байк</p>
+                <p class="box2">СЕРЕГА ПИРАТ</p>
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="player">
+          <div class="mini_photo">
+            <img src="../src/images/music.PNG" class="mini"> 
+          </div>
+          <div class="name">
+            <a class="links" href="index.html">
+              <span class = "name_">Старое кино</span>
+            </a>
+          </div>
+          <div class="author">
+            <a class="links" href="index.html">
+              <span class = "author_">Перемотка</span></a>
+          </div>
+          <div class="like">
+            <a class="links" href="index.html">
+              <img src="../src/images/like.PNG" class="icon">
+            </a>
+            <a class="links" href="index.html">
+              <img src="../src/images/icon3.PNG" class="icon">
+            </a>
+          </div>
+          <div class="volume">
+            <audio controls>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
