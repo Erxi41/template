@@ -1,9 +1,14 @@
-import React from 'react';
 
-export default function performers (props: { image: string; name: string; type: string }) {
+export type TrackProps = {
+  image: string;
+  name: string;
+  type: string;
+}
+
+export default function performers (props: TrackProps) {
     return (
       <div>
-      <a className="links" href="index.html">
+      <a className="links" href="/">
         <img className="cover" src={props.image} alt="cover-img"></img>
         <p className="box">
           {props.name}
